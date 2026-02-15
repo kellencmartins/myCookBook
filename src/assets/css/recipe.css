@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Instrument+Serif:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("index.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    margin-top: 25px;
+    height: 100vh;
+    width: 50%;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Instrument Serif', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #725e53;
+    margin-bottom: 15px;
+}
+
+.titleReturn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.quantidade{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.quantidade p {
+    font-size: 14px;
+    color: #93796c;
+}
+
+.description {
+    font-size: 14px;
+    color: #93796c;
+    margin-bottom: 15px;
+}
+
+.ingredients h2, .instructions h2, .obsTitle h2 {
+    font-family: 'instrument serif', serif;
+    color: #725e53;
+}
+
+.ingredients ul{
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.ingredients ul li {
+    font-size: 14px;
+    color: #93796c;
+    margin-bottom: 5px;
+}
+
+.qttIng {
+    color: #725e53;
+    font-weight: bold;
+}
+
+.instructions {
+    margin-top: 15px;
+}
+
+.instructions ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.instructions ul li {
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.prepareCounter {
+    padding: 5px 10px;
+    border-radius: 100px;
+    background-image: linear-gradient(135deg, #ce7e8b, #e6b999);
+    color: #f4ede6;
+    font-weight: bold;
+}
+
+.obsTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 10px;
+}
+
+.obsTextarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.input-field {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #93796c60;
+    border-radius: 8px;
+    outline: none;
+}
+
+input::placeholder {
+    color: #93796c;
+}
+
+input:focus {
+    border: 2px solid #ce7e8b;
+}
+
+.input label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.buttonObs {
+    width: 8%;
+}
+
+.obsAdd {
+    background-color: #f4ede6;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #93796c;
+    border: 1px solid #93796c60;
+    border-radius: 8px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.obsTrash {
+    border-radius: 8px;
+    padding: 5px;
+    &:hover {
+        background-color: #ce7e8b;
+        fill: #f4ede6;
+    }
+}

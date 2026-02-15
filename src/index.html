@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My CookBook!</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
+
+    <body>
+        <div class="hero">
+            <svg xmlns="http://www.w3.org/2000/svg" class="svg-img" width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#f4ede6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open h-12 w-12 text-muted-foreground mx-auto">
+                <path d="M12 7v14"></path>
+                <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+            </svg>
+            <h1>My CookBook!</h1>
+            <h6>uma pitada de amor e carinho</h6>
+        </div>
+
+        <div class="main">
+            <div class="state-empty">
+                <div class="empty">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="empty-svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#93796c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book-open h-12 w-12 text-muted-foreground mx-auto">
+                        <path d="M12 7v14"></path>
+                        <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+                    </svg>
+                    <h2>Nenhuma receita adicionada ainda</h2>
+                    <p>Adicione suas receitas favoritas para começar a cozinhar!</p>
+                    <button class="btn-primary add-recipe">+ Criar primeira receita</button>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="navbar">
+                    <input type="search" name="search" class="search" placeholder="Pesquisar receitas...">
+                    <button class="btn-primary add-recipe" onclick="addRecipe()">+ Incluir</button>
+                </div>
+
+                <div class="recipes">
+                    <div class="card-recipe" onclick="recipe()">
+                        <img src="assets/img/img-recipes.png" alt="" width="300px">
+                        <div class="recipe-text">
+                            <h3>Título Receita</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/js/index.js"></script>
+    </body>
+
+</html>
