@@ -1,6 +1,6 @@
 //funções temporárias
 function emptyState() {
-    if (window.location.pathname === '/src/index.html') {
+    if (window.location.pathname === '/cookbook/src/index.html' || window.location.pathname === '/cookbook/src/') {
        let emptyState = document.querySelector('.state-empty');
         emptyState.classList.add('hidden');
     }
@@ -142,5 +142,23 @@ function dadosRecipeJSON() {
         return;
     }
 
-    let dadosJson =  JSON.stringify(dados);
+    salvarReceita('/recipe');
+}
+
+async function salvarReceita(endPoint) {
+    try {
+        const res = await fetch('http://localhost:5500' + endPoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(dados)
+        });
+
+        const result = await res.json();
+        console.log("Success:", result);
+        return result;
+    } catch (error) {
+        console.log("Error:", error);
+    }
 }
